@@ -9,7 +9,7 @@ const cors = require('cors');
 
 app.use(cors());
 
-mongoose.connect('mongodb://learning-graphql:mbugua8188@ds013579.mlab.com:13579/learning-graphql', { useNewUrlParser: true });
+mongoose.connect('mongodb://learning-graphql:PASSWORD@ds013579.mlab.com:13579/learning-graphql', { useNewUrlParser: true });
 mongoose.connection.once('open', () => console.log('Successful database connection'));
 
 app.use('/graphql', graphqlHTTP({
